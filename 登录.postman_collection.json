@@ -1,0 +1,84 @@
+{
+	"info": {
+		"name": "登录",
+		"_postman_id": "526ae309-2927-4a88-82cc-f9bf32f194bd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "验证登录",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "App-code",
+						"value": "ZJ-PUB-PD-IOS"
+					},
+					{
+						"key": "Commons-session",
+						"value": "123"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{u}}/user-ms/user/sign",
+					"host": [
+						"{{u}}"
+					],
+					"path": [
+						"user-ms",
+						"user",
+						"sign"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "登录",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "app-code",
+						"value": "ZJ-PUB-PD-IOS"
+					},
+					{
+						"key": "Commons-session",
+						"value": "123"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": 0,\r\n    \"oid\": 18532101248,\r\n    \"password\": 123456\r\n}"
+				},
+				"url": {
+					"raw": "{{u}}/user-ms/user/signIn",
+					"host": [
+						"{{u}}"
+					],
+					"path": [
+						"user-ms",
+						"user",
+						"signIn"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
